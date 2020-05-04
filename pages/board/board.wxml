@@ -1,0 +1,70 @@
+<view class="container">
+ 
+  <view class="selection">
+    <swiper indicator-dots="true"
+      autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="selection">
+      <view class="header"> 
+           <text>公告</text>
+           
+      </view>
+
+
+      <view class="content">
+          <view class="content-item" bindtap="news" wx:for="{{contentItems}}">
+             <image src="../../images/imag2.png" />
+            
+             <view class="content-item-text">
+              <text>闭馆通知</text>
+               
+             </view>
+          </view>
+
+         
+
+      </view>
+
+  </view>
+
+
+
+  <view class="selection">
+      <view class="header">
+           <text>近期赛事</text>
+         
+      </view>
+
+      <view class="list-item" wx:for="{{listItems}}">
+
+            <view class="list-item-images"bindtap="battle">
+                 <image src="../../images/imag1.png" class="list-item-images-img" />
+                 
+            </view>
+
+            <view class="list-item-text">
+                <view class="list-item-text-title">
+                  <text>第9届羽毛球大赛报名开始啦！</text>
+                </view>
+
+                <view class="list-item-text-content">
+                  <text>第九届羽毛球大赛欢迎上大全体师生参加！心动不如行动，快来吧！</text>
+                </view>
+
+            </view>
+
+      </view>
+
+
+  </view>
+
+
+</view>

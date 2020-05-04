@@ -1,0 +1,147 @@
+.showBtn {
+  display: flex;
+	justify-content: space-between;
+	margin-left:0rpx;
+	line-height:90rpx;
+	border-bottom:1rpx solid #fff;
+  width:100%;
+  background-color:#fff;
+
+}
+
+/* 是否显示 */
+
+.modal_show {
+    display: block;
+}
+
+.modal_hide {
+    display: none;
+}
+
+/* main */
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* cancel */
+
+.modal_cancel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* container */
+
+.modal_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+/* header */
+
+.modal_header {
+    padding: 10rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.header_tip {
+    position: relative;
+    font-size: 25rpx;
+    padding-top: 10rpx;
+    color: #999;
+}
+
+
+
+/* hour */
+
+.hour {
+    padding: 20rpx 0 0 20rpx;
+    height: 300rpx;
+   
+}
+
+.hour_item {
+    width: 23.5%;
+    box-sizing: border-box;
+    height: 130rpx;
+    line-height: 70rpx;
+    border-radius: 6rpx;
+    text-align: center;
+    float: left;
+    border: 2rpx solid #eee;
+    font-size: 30rpx;
+    margin-right: 1%;
+    margin-bottom: 30rpx;
+    justify-content: space-between;
+
+}
+
+/* hour_active */
+
+.hour_active {
+    background: #159de3;
+    color: #fff;
+    border: 2rpx solid #159de3;
+}
+
+/* hour_unactive */
+
+.hour_unactive {
+    color: #999;
+}
+
+.space {
+    padding: 20rpx 0 0 20rpx;
+    height: 300rpx;
+    
+}
+
+.space_item {
+    width: 18%;
+    box-sizing: border-box;
+    height: 130rpx;
+    line-height: 70rpx;
+    border-radius: 6rpx;
+    text-align: center;
+    float: left;
+    border: 1px solid #eee;
+    font-size: 30rpx;
+    margin-right: 1%;
+    margin-bottom: 30rpx;
+    justify-content: space-between;
+
+}
+.space_active {
+    background: #159de3;
+    color: #fff;
+    border: 2rpx solid #159de3;
+}
+
+
+
+.space_unactive {
+    color: #999;
+}
+.text1{
+color:#fff;
+}
+.text{
+  width:100%;
+  height:100rpx;
+  display: flex;
+	justify-content: space-between;
+}

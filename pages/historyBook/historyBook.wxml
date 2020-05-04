@@ -1,0 +1,36 @@
+<!--pages/user/historyBook.wxml-->
+<!-- <block wx:if="{{count}}"> -->
+<swiper-item>
+<view class="page">
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"></view>
+            <text>当前订单情况</text>
+        </view>
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"></view>
+            <text>如下：</text>
+        </view>
+        <text class="titledisplay">预定场地：</text>
+          <view class="massagedisplay" wx:for="{{results}}">{{item.space}}</view>
+        <text class="titledisplay">预定日期：</text>
+          <view class="massagedisplay" wx:for="{{results}}">{{item.date}}</view>
+        <text class="titledisplay">预定时间段：</text>
+          <view class="massagedisplay" wx:for="{{results}}">{{item.time}}</view>
+</view>
+</swiper-item>
+
+<!-- </block>
+
+<block wx:else>
+<swiper-item>
+<view class="page">
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"><image class="scimg" src="/images/search_no.png"></image></view>
+            <text>暂时还没有订单信息</text>
+        </view>
+</view>
+</swiper-item>
+</block> -->
+
+
+

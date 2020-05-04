@@ -1,0 +1,36 @@
+<!--pages/user/user.wxml-->
+<view class="page">
+
+    <!--调取用户信息-->
+    <view class="userinfo">    
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>    
+    <block wx:else>                
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>      
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>    
+    </block>  
+    </view>  
+
+    <!--个人中心三功能-->
+    <view class="jumpBox mt10">
+      <navigator url="../historyBook/historyBook">
+         <span class="font_14 c3">当前订单信息</span>
+         <span class="fl_r c9 font_12 l_h20" hover-class="none"> ></span>
+      </navigator>
+    </view>
+
+    <view class="jumpBox mt10">
+      <navigator url="../card/IDCsucc">
+         <span class="font_14 c3">学生证绑定</span>
+         <span class="fl_r c9 font_12 l_h20" hover-class="none"> ></span>
+      </navigator>
+    </view>
+
+    <!-- <view class="jumpBox mt10">
+      <navigator url="../rituall/rituall">
+          <span class="font_14 c3">优惠劵</span>
+          <span class="fl_r c9 font_12 l_h20" hover-class="none"> ></span>
+      </navigator>
+    </view> -->
+
+
+</view>

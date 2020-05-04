@@ -1,0 +1,26 @@
+<!--pages/order/order.wxml-->
+<image class="item" style="width: 100%; height: 250px; background-color: #eeeeee;" src="/images/badmin.jpg" >
+</image>
+
+<view class="item1">
+上海大学羽毛球馆欢迎您！
+</view>
+
+<view class="text">
+
+  <view class="item2">
+  用户须知：
+  </view>
+  <view class="item2">
+  1、上海大学羽毛球馆只有当天预约有效
+  </view>
+  <view class="item3">
+  2、每个用户每天限订一个小时
+  </view>
+  <view class="item4">
+  3、预约成功后不可取消订单
+  </view>
+</view>
+
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 立即预约</button>

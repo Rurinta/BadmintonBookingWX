@@ -1,0 +1,18 @@
+<view class="item"> 
+<view class="section">恭喜，您已预约成功！
+</view>
+<view class="container">
+<text style="font-size:40rpx;height:100rpx ">日期：{{time}}\n
+</text>
+<text style="font-size:40rpx ">时间：{{hour}}\n
+</text>
+<text style="font-size:40rpx ">场地：{{space}}\n
+</text>
+</view>
+<view class="section1">
+<button style="width:80%;height:100rpx" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 生成我的订单</button>
+        <button style="width:80%;height:100rpx" type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> 返回首页</button>
+        </view>
+</view>

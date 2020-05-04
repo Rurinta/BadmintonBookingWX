@@ -1,0 +1,59 @@
+/* pages/card/IDCsucc.wxss */
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 1px solid #eee;  
+    text-align: center;  
+    line-height: 80rpx;
+    background: #fff;  
+    position: fixed;
+    top: 0;  
+    z-index: 999;
+    }  
+.swiper-tab-list{  
+  font-size: 12px;  
+  display: inline-block;  
+  width: 20%;  
+  color: #666;  
+  }  
+.on{ 
+  color: #dd2727;  
+  border-bottom: 5rpx solid #dd2727;
+  }  
+  
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+  }  
+
+  .weui-form-preview__img{
+  padding: 0px 0px;
+  line-height:0;
+}
+.weui-form-preview__img image{
+  width: 100%;
+}
+.weui-form-item{
+  margin-bottom: 15px;
+  align-items: center;
+}
+.weui-form-preview__label{
+  color:#000;
+}
+
+.massagedisplay{
+    width: 100%; 
+    display: block;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+}
+
+.titledisplay{
+    width: 100%; 
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}

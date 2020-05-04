@@ -1,0 +1,27 @@
+
+<view class="section">
+<view class="text">
+上海大学羽毛球馆
+</view>
+</view>
+
+<view class="section1">￥12.00
+
+</view>
+<view class="section2">
+<text class="left">收款方
+
+</text>
+<text class="right">三个诸葛亮
+
+</text>
+</view>
+
+<view class="button">
+<button style="width:90%" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 立即支付</button>
+
+<button style="width:90%" type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> 取消支付 </button>
+        </view>
+        

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/book/book",
+    "pages/pay/pay",
+    "pages/finish/finish",
+    "pages/board/board",
+    "pages/news/news",
+    "pages/battle/battle",
+    "pages/user/user",
+    "pages/card/SchoolCard",
+    "pages/card/IDCsucc",
+    "pages/historyBook/historyBook",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": "上海大学羽毛球馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/board/board",
+        "iconPath": "images/informer.png",
+        "text": "通知",
+        "selectedIconPath": "images/informer.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "images/book.png",
+        "text": "预约",
+        "selectedIconPath": "images/book.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/mine.png",
+        "text": "用户中心",
+        "selectedIconPath": "images/mine.png"
+      }
+    ],
+    "color": "black",
+    "selectedColor": "green"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

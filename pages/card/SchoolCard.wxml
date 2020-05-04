@@ -1,0 +1,15 @@
+<!--pages/user/SchoolCard.wxml-->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <input text type="number" maxlength="8" placeholder="请输入学生证号" name="StudentID"/>
+  </view>
+  
+  <view class="section">
+    <input password type="text" placeholder="请输入学生证密码" name="CardPassword"/>
+  </view>
+
+  <view class="SubmitButton">
+      <button type="primary" formType="submit">绑定学生证</button>
+  </view>    
+</form>

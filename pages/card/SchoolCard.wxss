@@ -1,0 +1,12 @@
+/* pages/user/SchoolCard.wxss */
+.section {
+  height: 100rpx;
+  border-bottom: 1px lightgrey solid;
+  display: flex;
+  align-items: center;
+  margin: 0 30rpx;
+}
+
+.SubmitButton{
+  justify-content: center;
+}

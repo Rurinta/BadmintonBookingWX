@@ -1,0 +1,69 @@
+ <!--index.wxml-->
+<!-- modal 自定义日期弹出框-->
+<image class="item" style="width: 100%; height: 250px; background-color: #eeeeee;" src="/images/badmin.jpg" >
+</image>
+
+<form bindsubmit="formSubmit" report-submit="true">
+
+<button class='showBtn' bindtap='showTimeModel'>时间</button>
+
+<view class="modal {{timeShow?'modal_show':'modal_hide'}}">
+    <!-- 点击弹出框外部取消 -->
+    <view class='modal_cancel' bindtap='modelCancel'></view>
+
+    <!-- 弹出框主体 -->
+    <view class='modal_container'>
+        <!-- header -->
+        <view class='modal_header'>
+            <view>预定时间</view>
+            <view class='header_tip'>今日的预订</view>
+        </view>
+
+        <!-- 小时 -->
+        <view class='hour'>
+            <view bindtap="hourClick" class="hour_item {{item.isShow?'':'hour_unactive'}} {{hourIndex==index?'hour_active':''}} " wx:for="{{hourList}}" wx:key="{{index}}" data-index="{{index}}" data-isshow="{{item.isShow}}">{{item.hour}}</view>
+        </view>
+
+        <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" style="width:100%;"
+        disabled="{{disabled}}" bindtap='confirm'> 确认</button>>
+    </view>
+    
+    <view class="text1">{{chooseTime}} </view>
+
+    <view class="text1">{{chooseHour}} </view>
+</view>
+
+<view class="text">{{chooseHour}}</view>
+
+<button class='showBtn' bindtap='showSpaceModel'>场地</button>
+<view class="modal {{spaceShow?'modal_show':'modal_hide'}}">
+    <!-- 点击弹出框外部取消 -->
+    <view class='modal_cancel' bindtap='modelCancel1'></view>
+
+    <!-- 弹出框主体 -->
+    <view class='modal_container'>
+        <!-- header -->
+        <view class='modal_header'>
+            <view>预订场地</view>
+            <view class='header_tip'>今日空余</view>
+        </view>
+        
+        <!-- 场地 -->
+        <view class='space'>
+            <view bindtap="spaceClick" class="space_item {{item.isShow?'':'space_unactive'}} {{spaceIndex==index?'space_active':''}} " wx:for="{{spaceList}}" wx:key="{{index}}" data-index="{{index}}" data-isshow="{{item.isShow}}">{{item.space}}</view>
+        </view>
+
+       <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap='confirm1'> 确认</button>>
+    </view>
+   <view class="text1">{{chooseSpace}} </view>
+   
+</view>
+
+<view class="text">{{chooseSpace}}</view>
+
+<button type="submit" formType="submit" style="background-color:green;width:40%;color:#fff;" > 确认并支付 </button>
+</form>
+
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover" style="width:40%;"> 取消 </button>

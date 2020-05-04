@@ -1,0 +1,30 @@
+<!--pages/card/IDCsucc.wxml-->
+<block wx:if="{{value}}">
+<swiper-item>
+<view class="page">
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"></view>
+            <text>请先绑定学生证信息！</text>
+            
+        </view>
+</view>
+</swiper-item>
+</block>
+<block wx:else>
+<swiper-item>
+<view class="page">
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"></view>
+            <text>已绑定学生证信息</text>
+        </view>
+        <view class="search_no" wx:if="{{!productData.length}}">
+            <view class="font_14"></view>
+            <text>如下：</text>
+        </view>
+        <text class="titledisplay">学生卡号：</text>
+          <view class="massagedisplay" wx:for="{{results}}">{{item.StudentID}}</view>
+        <text class="titledisplay">学生姓名：</text>
+          <view class="massagedisplay" wx:for="{{results}}">{{item.StedentName}}</view>
+</view>
+</swiper-item>
+</block>
